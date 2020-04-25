@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>FORTY SHADES OF GRAY</title>
+</head>
+<body>
+        <audio id="bgm" loop>
+              <source src="astronomia.mp3" type="audio/mpeg">
+        </audio>
+   <h1 id="change" style="font-size:3vw;">FORTY SHADES OF GRAY</h1>
+   <input type="text" id="userinput" placeholder="enter ur name">
+   <button id="enter">enter</button>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">LEVEL</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="easy.html" target="_top">20 blocks</a>
+          <a href="medium.html" target="_top">25 blocks</a>
+          <a href="hard.html" target="_top">36 blocks</a>
+        </div>
+    </div>
+    <button id="sound" onclick="ins()" type="button">sound effect</button>
+   <script>
+     
+     var button = document.getElementById("enter");
+     var input = document.getElementById("userinput");
+     button.addEventListener("click",function(){
+       if(input.value.length>0){
+       localStorage.setItem("name",input.value);
+       input.value="";}
+     });
+     function ins(){ 
+      
+        var x = document.getElementById("bgm"); 
+        x.volume = 0.4;
+        x.play();
+      
+     }   
+    </script>
+    
+    <script src="script.js"></script>
+</body>
+</html>    
+    
+    
+
+
+
+
+

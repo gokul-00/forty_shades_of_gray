@@ -1,0 +1,122 @@
+body {
+    background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(52, 52, 52), rgb(166, 166, 166), rgb(52, 52, 52)) repeat scroll 0% 0%;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+  }
+  #userinput{
+    width : 30%;
+    height: 29px;
+    top: 30%;
+    display: inline-block;
+    position: absolute;
+  }
+  #enter{
+    background-color: rgb(14, 15, 15);
+    color: white;
+    padding: 7px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    width : 100px;
+    top: 30%;
+    left:66%;
+    display: inline-block;
+    position: absolute;
+  }
+  #sound{
+    background-color: rgb(14, 15, 15);
+    color: white;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    width : 200px;
+    top: 40%;
+    display: inline-block;
+    position: absolute;
+  }
+  #sound:hover{
+    transform: scale(1.1);
+  }
+ 
+  
+  /* DEMO-SPECIFIC STYLES */
+ #change {
+    color: black;
+    font-family: 'Press Start 2P', cursive;
+    top: 50%;
+    left: 50%;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 50px auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 50% }
+  }
+  
+  
+/* Dropdown Button */
+.dropbtn {
+  background-color: rgb(14, 15, 15);
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  width : 200px;
+  top: 60%;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(46, 47, 48);
+  transform: scale(1.1);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  font-weight: 300;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}

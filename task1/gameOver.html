@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>GAME OVER!!!</title>
+    <style>
+        body {
+            background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(52, 52, 52), rgb(166, 166, 166), rgb(52, 52, 52)) repeat scroll 0% 0%;
+        }
+        h3{
+            font-family: 'Black Ops One', cursive;
+        }
+        h2{ 
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+        }
+        h1 {
+            color: black;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            top: 50%;
+        }
+        button{
+            color: white;
+            background-color: black;
+            position: absolute;
+            border: none;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            padding: 10px 20px;
+
+        }
+        
+        table#t01 tr:nth-child(even) {
+            text-align: center;
+        background-color: #eee;
+        }
+        table#t01 tr:nth-child(odd) {
+            text-align: center;
+        background-color: #fff;
+        }
+        table#t01 th {
+        background-color: black;
+        color: white;
+        }
+    </style>
+</head>
+<body onpageshow="showtime(); reorderscore();">
+    <h3 id="urtime"></h3>
+    <a href="index.html" target="_top">
+    <button type="button" >play again</button></a>
+    <h1 style="font-size:4vw;">GAME OVER!!!</h1>
+    <table id="t01" style="width:33.33%">
+        
+        <tr>
+          <th>Name</th>
+          <th>normalised time</th>
+        </tr>
+        <tr>
+            <td id="name[1]"></td>
+            <td id="time[1]"></td>
+        </tr>
+        <tr>
+            <td id="name[2]"></td>
+            <td id="time[2]"></td>
+        </tr>
+        <tr>
+            <td id="name[3]"></td>
+            <td id="time[3]"></td>
+        </tr>
+        <tr>
+            <td id="name[4]"></td>
+            <td id="time[4]"></td>
+        </tr>
+        <tr>
+            <td id="name[5]"></td>
+            <td id="time[5]"></td>
+        </tr>
+        
+      </table>
+    <h2 >made with ❤ by gokul!!!</h2>
+   <script src="timer.js"></script> 
+   <script src="script.js"></script>
+</body>
+</html>
